@@ -1,72 +1,93 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="utf-8">
-		<meta http-equiv="X-UA-Compatible" content="IE=edge">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<title>Example of Bootstrap 3 Accordion</title>
-		<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
-		<link rel="stylesheet" type="text/css" href="css/on.css">
-		<link rel="stylesheet" type="text/css" href="css/bootstrap-theme.css">
-		<script src="js/jquery.js" type="text/javascript"></script>
-		<script src="js/bootstrap.js" type="text/javascript"></script>
-	</head>
-
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Example of Bootstrap 3 Accordion</title>
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+  <link rel="stylesheet" type="text/css" href="css/on.css">
+  <link rel="stylesheet" type="text/css" href="css/bootstrap-theme.css">
+  <script src="js/jquery.js" type="text/javascript"></script>
+  <script src="js/bootstrap.js" type="text/javascript"></script>
+</head>
+<style type="text/css">
+  .navbar-brand{
+    padding: 7px;
+  }
+  .navbar-inverse .navbar-nav > li > a {
+    color: black;
+  }
+  .img-thumbnail{
+    padding: 0px;
+  }
+</style>
 <body style="background:#6666CC">
-<div class="container-fluid">
-<div class="container-fluid" style="padding-top: 25px;padding-bottom: 25px;" >
-<nav class=" navbar navbar-inverse" style="background:#00BFFF;">
-  <div class="navbar-header"> 
-   <a class="navbar-brand navbar-right" href ="#" style="color: black"><img src="praba.jpg" class="img-circle"  width="40" height="40"> <span class="glyphicon glyphicon-user"></span> My Profile</a>
-   </div>
-      <ul class="nav navbar-nav navbar-right">
-          <li class="dropdown">
-              <a title="" class="dropdown-toggle">
-                  <span class="">
-                  </span>
-                  &nbsp;
-                  Home
-                  &nbsp;
-              </a>
-          </li>
-      </ul> 
-
-   </nav>
-   </div>
-<div class="container">
- <div class="panel-group" id="co">
-  <div class="panel panel-info" >
-   <div class="panel-heading" >
-    <h4 class="panel-title" >
-     <a href="#cla" data-toggle="collapse" data-parent="co"><b>Personal Information</b></a>
-      </h4> 
-    </div>
-    <div class="panel-collapse collapse in" id="cla">
-     <table class="table">
-    <thead>
-      <tr>
-        <th style="padding: 10px;">Name</th> <td><input class="form-control" id="inputdefault" type="text" value="P.Prabakaran" style="width: 350px;"></td>
-      </tr>
-      <tr>
-        <th style="padding: 10px;">Age</th> <td><input class="form-control" id="inputdefault" type="text" value="22" style="width: 350px;"></td>
-      </tr>
-      <tr>
-        <th style="padding: 10px;">DOB</th> <td><input class="form-control" id="inputdefault" type="text" value="01-06-1996" style="width: 350px;"></td>
-      </tr>
-      
-      </thead>
-      </table>
-     </div>
-     </div>
-      <div class="panel panel-primary" >
-        <div class="panel-heading" >
-         <h4 class="panel-title" >
-          <a href="#cla1" data-parent="co" data-toggle="collapse" ><b>Qualification</b></a>
-         </h4>
+  <div class="container-fluid">
+    <div class="container-fluid" style="padding-top: 25px;padding-bottom: 25px;" >
+      <nav class=" navbar navbar-inverse" style="background:#00BFFF;">
+        <div class="navbar-header navbar-right" style="margin: 0;"> 
+         <a class="navbar-brand" href ="#" style="color: black" >
+         <img src="praba.jpg" class="img-circle img-thumbnail" style="height: 40px;"> 
+         </a>
        </div>
-      <div class="panel-collapse collapse in" id="cla1">
+       <ul class="nav navbar-nav">
+        <li class="dropdown">
+          <a><span class="glyphicon glyphicon-user"></span> My Profile</a>
+        </li>
+      </ul> 
+      <ul class="nav navbar-nav">
+        <li class="dropdown">
+          <a data-toggle = "dropdown"><span class="glyphicon glyphicon-earphone"></span> Contact Us 
+          <span class="caret"></span>
+          </a>
+          <ul class="dropdown-menu">
+            <li>8220242994</li>
+            
+          </ul>
+        </li>
+      </ul>
+      <ul class="nav navbar-nav">
+        <li class="dropdown">
+          <a><span class="glyphicon glyphicon-home"></span> Home</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+  <div class="container">
+   <div class="panel-group" id="co">
+    <div class="panel panel-info" >
+     <div class="panel-heading" >
+      <h4 class="panel-title" >
+       <a href="#cla" data-toggle="collapse" data-parent="co"><b>Personal Information</b></a>
+     </h4> 
+   </div>
+   <div class="panel-collapse collapse in" id="cla">
      <table class="table">
-     <tbody>
+      <thead>
+        <tr>
+          <th style="padding: 10px;">Name</th> <td><input class="form-control" id="inputdefault" type="text" value="P.Prabakaran" style="width: 350px;"></td>
+        </tr>
+        <tr>
+          <th style="padding: 10px;">Age</th> <td><input class="form-control" id="inputdefault" type="text" value="22" style="width: 350px;"></td>
+        </tr>
+        <tr>
+          <th style="padding: 10px;">DOB</th> <td><input class="form-control" id="inputdefault" type="text" value="01-06-1996" style="width: 350px;"></td>
+        </tr>
+
+      </thead>
+    </table>
+  </div>
+</div>
+<div class="panel panel-primary" >
+  <div class="panel-heading" >
+   <h4 class="panel-title" >
+    <a href="#cla1" data-parent="co" data-toggle="collapse" ><b>Qualification</b></a>
+  </h4>
+</div>
+<div class="panel-collapse collapse in" id="cla1">
+ <table class="table">
+   <tbody>
     <thead>
       <tr>
         <th style="padding: 10px;">College</th> <td><input class="form-control" id="inputdefault" type="text" value="K.S.R College Of Engineering" style="width: 350px;"></td>
@@ -77,21 +98,21 @@
       <tr>
         <th style="padding: 10px;">CGPA</th> <td><input class="form-control" id="inputdefault" type="text" value="7.8" style="width: 350px;"></td>
       </tr>
-        </thead>
-      </tbody>
-      </table>
-     </div>
-     </div>
+    </thead>
+  </tbody>
+</table>
+</div>
+</div>
 
-        <div class="panel panel-info" >
-        <div class="panel-heading" >
-         <h4 class="panel-title" >
-          <a href="#cla2" data-parent="co" data-toggle="collapse" ><b>Area Of Specialization</b></a>
-         </h4>
-       </div>
-      <div class="panel-collapse collapse in" id="cla2">
-     <table class="table">
-     <tbody>
+<div class="panel panel-info" >
+  <div class="panel-heading" >
+   <h4 class="panel-title" >
+    <a href="#cla2" data-parent="co" data-toggle="collapse" ><b>Area Of Specialization</b></a>
+  </h4>
+</div>
+<div class="panel-collapse collapse in" id="cla2">
+ <table class="table">
+   <tbody>
     <thead>
       <tr>
         <th style="padding: 10px;">Programming Language</th> <td><input class="form-control" id="inputdefault" type="text" value="Java SE7" style="width: 350px;"></td>
@@ -103,55 +124,55 @@
         <th style="padding: 10px;">CGPA</th> <td><input class="form-control" id="inputdefault" type="text" value="7.8" style="width: 350px;"></td>
       </tr>
       
-      </thead>
-      </tbody>
-      </table>
-     </div>
-     </div>
-      <div class="panel panel-primary" style="background: blue;">
-        <div class="panel-heading" >
-         <h4 class="panel-title" >
-          <a href="#cla3" data-parent="co" data-toggle="collapse" ><b>Achievements</b></a>
-         </h4>
-       </div>
-      <div class="panel-collapse collapse in" id="cla3">
-     <ul class="list-group">
-       <li class="list-group-item"><span class="glyphicon glyphicon-asterisk"></span> Completed a course on PIJ (Programming in Java) with 84.5% and Received certificate from NIIT in 2016.</li>
-       <li class="list-group-item"><span class="glyphicon glyphicon-asterisk"></span> Secured third place in Hackathon, a coding Competition for Students in KSR Educational Institutions, Conducted by Amphisoft Technologies.</li>
-       </ul>
-     </div>
-     </div>
-       <div class="panel panel-info" style="background: blue;">
-        <div class="panel-heading" >
-         <h4 class="panel-title" >
-          <a href="#cla4" data-parent="co" data-toggle="collapse" ><b>Co-Curricular Activities</b></a>
-         </h4>
-       </div>
-      <div class="panel-collapse collapse in" id="cla4">
-     <ul class="list-group">
-       <li class="list-group-item"><span class="glyphicon glyphicon-asterisk"></span> Attended a one day workshop on Android Application Development at Park College of Engineering And Technology, Coimbatore on 20th February 2015. </li>
-       <li class="list-group-item"><span class="glyphicon glyphicon-asterisk"></span> Attended a Two day workshop on International Ethical Hacking &Cyber Security Conducted by i3indya Technologies at K.S.R College of Engineering on 8th &9th October 2015.</li>
-       <li class="list-group-item"><span class="glyphicon glyphicon-asterisk"></span>Completed Foundation Program 4.0 conducted by Infosys in 2016.</li>
-       </ul>
-     </div>
-     </div>
-     <div class="panel panel-info">
-        <div class="panel-heading" >
-         <h4 class="panel-title" >
-          <a href="#cla5" data-parent="co" data-toggle="collapse" ><b>Mini Project</b></a>
-         </h4>
-       </div>
-      <div class="panel-collapse collapse in" id="cla5">
-     <ul class="list-group">
-       <li class="list-group-item"><span class="glyphicon glyphicon-asterisk"></span>A basic Library Management System using Java, Servlet, HTML and JSP with oracle database connectivity. </li>
-       <li class="list-group-item"><span class="glyphicon glyphicon-asterisk"></span>A basic Profile Creation Web Designing Project Using "Bootstrap” and “CSS”.</li>
-       </ul>
-     </div>
-     </div>
-        
-     
+    </thead>
+  </tbody>
+</table>
+</div>
+</div>
+<div class="panel panel-primary" style="background: blue;">
+  <div class="panel-heading" >
+   <h4 class="panel-title" >
+    <a href="#cla3" data-parent="co" data-toggle="collapse" ><b>Achievements</b></a>
+  </h4>
+</div>
+<div class="panel-collapse collapse in" id="cla3">
+ <ul class="list-group">
+   <li class="list-group-item"><span class="glyphicon glyphicon-asterisk"></span> Completed a course on PIJ (Programming in Java) with 84.5% and Received certificate from NIIT in 2016.</li>
+   <li class="list-group-item"><span class="glyphicon glyphicon-asterisk"></span> Secured third place in Hackathon, a coding Competition for Students in KSR Educational Institutions, Conducted by Amphisoft Technologies.</li>
+ </ul>
+</div>
+</div>
+<div class="panel panel-info" style="background: blue;">
+  <div class="panel-heading" >
+   <h4 class="panel-title" >
+    <a href="#cla4" data-parent="co" data-toggle="collapse" ><b>Co-Curricular Activities</b></a>
+  </h4>
+</div>
+<div class="panel-collapse collapse in" id="cla4">
+ <ul class="list-group">
+   <li class="list-group-item"><span class="glyphicon glyphicon-asterisk"></span> Attended a one day workshop on Android Application Development at Park College of Engineering And Technology, Coimbatore on 20th February 2015. </li>
+   <li class="list-group-item"><span class="glyphicon glyphicon-asterisk"></span> Attended a Two day workshop on International Ethical Hacking &Cyber Security Conducted by i3indya Technologies at K.S.R College of Engineering on 8th &9th October 2015.</li>
+   <li class="list-group-item"><span class="glyphicon glyphicon-asterisk"></span>Completed Foundation Program 4.0 conducted by Infosys in 2016.</li>
+ </ul>
+</div>
+</div>
+<div class="panel panel-info">
+  <div class="panel-heading" >
+   <h4 class="panel-title" >
+    <a href="#cla5" data-parent="co" data-toggle="collapse" ><b>Mini Project</b></a>
+  </h4>
+</div>
+<div class="panel-collapse collapse in" id="cla5">
+ <ul class="list-group">
+   <li class="list-group-item"><span class="glyphicon glyphicon-asterisk"></span>A basic Library Management System using Java, Servlet, HTML and JSP with oracle database connectivity. </li>
+   <li class="list-group-item"><span class="glyphicon glyphicon-asterisk"></span>A basic Profile Creation Web Designing Project Using "Bootstrap” and “CSS”.</li>
+ </ul>
+</div>
+</div>
+
+
 </div>
 </div>
 </div>
 </body>
-</html>                                		                                		
+</html>                                		                                		                            		                                		
